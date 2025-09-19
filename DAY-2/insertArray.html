@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Insert Element in Array</title>
+    <script src="./insertArray.js"></script>
 </head>
 <body>
     <h1>Insert Element in Array</h1>
@@ -12,31 +13,5 @@
         <input type="text" id="newEl" placeholder="Enter new element">
         <button onclick="insertEl()">Add element</button>
     </div>
-
-
-    <script>
-        
-        function insertEl() {
-            let data = [10,15,20,25];
-            let position = document.querySelector("#position");
-            let positionInp = position.value;
-            
-            let newEl = document.querySelector("#newEl");
-            let newElInp = newEl.value;
-            newElInp = +newElInp;
-
-            for(let i = data.length-1; i>= 0; i--){
-                if(i>= positionInp){
-                    data[i+1] = data[i];
-                    if(i==positionInp){
-                        data[i] = newElInp
-                    }
-                }
-            }
-            console.log(data);
-            position.value = "";
-            newEl.value = "";
-        }
-    </script>
 </body>
 </html>
