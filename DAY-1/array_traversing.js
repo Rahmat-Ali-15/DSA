@@ -9,7 +9,7 @@ for (let i = 0; i<arr.length; i++){
 
 document.write(arr[5])
 
-// 
+// Access element with text input and button
 
 let data = [10,12,15,0,8,7,70,20,30,40,50,60]
         function getElement() {
